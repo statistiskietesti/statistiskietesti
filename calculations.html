@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistiskie Testi</title>
+    <style>
+       .button1 {
+            display:inline-block;
+            padding:0.35em 1.2em;
+            border:0.1em solid #099421;
+            margin:0 0.3em 0.3em 0;
+            border-radius:0.12em;
+            box-sizing: border-box;
+            text-decoration:none;
+            font-family:poppins;
+            font-size:19px;
+            color:#099421;
+            text-align:center;
+            transition: all 0.2s;
+        }
+        .button1:hover {
+            background-color: #000000;
+            border:0.1em solid #ffffff;
+            color:#FFFFFF;    
+        }
+        @media all and (max-width:30em){
+        .button1{
+        display:block;
+        margin:0.4em auto;
+                }
+        }
+        body {
+            background-image: url("background.jpg");
+            font-family: poppins; 
+        }
+        .menu {
+          font-family: poppins; 
+          font-size: 15px;  
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .menu1 {
+          float: left;
+        }
+        
+        .menu1 a, .dropbtn{
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 20px 20px;
+          text-decoration: none;
+        }
+        li.dropdown {
+        display: inline-block;
+        }
+        
+        .menu1 a:hover, .dropdown:hover {
+          background-color: rgb(133, 28, 28);
+        }
+        .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu1"><a class="active" href="index.html">Sākums</a></li>
+        <li class="dropdown menu1">
+            <a href="javascript:void(0)" class="dropbtn">Teorija</a>
+            <div class="dropdown-content">
+                <a href="ievads.html">Ievads</a>
+                <a href="test1.html">Chi-kvadrāta tests sadalījumiem</a>
+                <a href="test2.html">Chi-kvadrāta neatkarības tests</a>
+                <a href="test3.html">Hipotēžu tests vidējam aritmētiskajam</a>
+                <a href="test4.html">Hipotēžu tests diviem izlašu vidējiem aritmētiskajiem</a>
+            </div>
+          </li>
+        <li class="menu1"><a href="game1.html">Atmiņas spēle</a></li>
+        <li class="menu1"><a href="game2.html">Formulu spēle</a></li>
+        <li class="menu1"><a href="calculations.html">Uzdevumi</a></li>
+    </ul>
+    <center><h1>Uzdevumi rēķināšanai</h1>
+      <p>Uzdevumi paredzēti paškontrolei. Pēc uzdevuma izpildes, uzspiediet uz pogas: "Parādīt atbildi!", lai salīdzinātu secinājumus, vai uzspiediet uz pogas: "Parādīt risinājumu!", lai redzētu risinājumu gaitu.</p>
+    <h3>1.uzdevums - Chi-kvadrāta tests sadalījumiem</h3></center>
+    <p>Tabulā dota informācija par skolā uzņemto skolēnu skaitu katrā mācību gadā. Pārbaudīt, vai skolēnu skaits sadalās vienmērīgi.
+    <img src="img15.png" alt="There should be an image here"></p>
+    <button id="poga1" class="button1" style="font-family: 'poppins'; font-size: 20px;" type="button" onclick="function1()">Parādīt atbildi!</button> 
+    <button id="ris1" class="button1" style="font-family: 'poppins'; font-size: 20px;" type="button" onclick="funct1()">Parādīt risinājumu!</button> 
+    <p style="visibility: hidden;"  id="first">H0 noraida, skolēnu skaits nesadalās vienmērīgi!</p>
+    <img id="pic1" src="img17.jpg" style="display:none" alt ="There should be an image here">
+
+    <center><h3>2.uzdevums - Chi-kvadrāta neatkarības tests</h3></center>
+    <p>Noteikt, vai klientu dzimums ir savstarpēji saistīts starp pieaugušajiem un bērniem.</p>
+    <img src="img16.png" alt="There should be an image here"></p>
+    <button id="poga2" class="button1" style="font-family: 'poppins'; font-size: 20px;" type="button" onclick="function2()">Parādīt atbildi!</button> 
+    <button id="ris2" class="button1" style="font-family: 'poppins'; font-size: 20px;" type="button" onclick="funct2()">Parādīt risinājumu!</button> 
+    <p style="visibility: hidden;"  id="second">H0 tiek apstiprināts, klientu dzimums starp pieaugušajiem un bērniem ir saistīts!</p>
+    <img id="pic2" src="img18.jpg" style="display:none" alt ="There should be an image here">
+
+    <center><h3>3.uzdevums - Hipotēžu tests vidējam aritmētiskajam</h3></center>
+    <p style="padding-left: 5%; padding-right: 5%;">Tiek apgalvots, ka putekļsūcējs gadā patērē vidēji 46 kWh ar standartnovirzi 7.2 kWh. Izlases paraugs no 12 mājām norāda, ka putekļsūcēji patērē 
+      vidēji 42 kWh gadā. Patērētāji vēlas noskaidrot, vai, pie 5% nozīmības līmeņa, putekļsūcējs gadā vidēji iztērē mazāk nekā 46 kWh.
+    </p>
+    <button id="poga3" class="button1" style="font-family: 'poppins'; font-size: 20px;" type="button" onclick="function3()">Parādīt atbildi!</button> 
+    <button id="ris3" class="button1" style="font-family: 'poppins'; font-size: 20px;" type="button" onclick="funct3()">Parādīt risinājumu!</button> 
+    <p style="visibility: hidden;"  id="third">H0 noraida, putekļsūcējs gadā vidēji iztērē mazāk nekā 46kWh.</p>
+    <img id="pic3" src="img19.jpg" style="display:none" alt ="There should be an image here">
+
+    <center><h3>4.uzdevums - Hipotēžu tests diviem izlašu vidējiem aritmētiskajiem</h3></center>
+    <p style="padding-left: 5%; padding-right: 5%;">Tika nejauši izraudzīti 30 pasniedzēji no publiskām augstskolām un 35 pasniedzēji no privātām augstskolām. Vidējā alga publisko augstskolu pasniedzējiem ir 373.34 EUR, bet privāto augstskolu – 395.59 EUR. Salīdzināt abas neatkarīgās izlases!</p>
+    <button id="poga4" class="button1" style="font-family: 'poppins'; font-size: 20px;" type="button" onclick="function4()">Parādīt atbildi!</button> 
+    <button id="ris4" class="button1" style="font-family: 'poppins'; font-size: 20px;" type="button" onclick="funct4()">Parādīt risinājumu!</button> 
+    <p style="visibility: hidden;"  id="fourth">H0 apstiprinās, vidējās algas neatšķiras.</p>
+    <img id="pic4" src="img20.jpg" style="display:none" alt ="There should be an image here">
+
+  </body>
+</html>
+<script>
+  function funct1(){
+    var field = document.getElementById('pic1');
+    field.style="padding-left: 2%; display:inline;";
+    var poga1 = document.getElementById('ris1');
+    poga1.hidden=true;
+  }
+  function funct2(){
+    var field = document.getElementById('pic2');
+    field.style="padding-left: 2%; display:inline;";
+    var poga1 = document.getElementById('ris2');
+    poga1.hidden=true;
+  }
+  function funct3(){
+    var field = document.getElementById('pic3');
+    field.style="padding-left: 2%; display:inline;";
+    var poga1 = document.getElementById('ris3');
+    poga1.hidden=true;
+  }
+  function funct4(){
+    var field = document.getElementById('pic4');
+    field.style="padding-left: 2%; display:inline;";
+    var poga1 = document.getElementById('ris4');
+    poga1.hidden=true;
+  }
+  function function1(){
+    var field = document.getElementById('first');
+    field.style="padding-left: 2%; visibility: visible;";
+    var poga1 = document.getElementById('poga1');
+    poga1.hidden=true;
+  }
+  function function2(){
+    var field = document.getElementById('second');
+    field.style="padding-left: 2%; visibility: visible;";
+    var poga2 = document.getElementById('poga2');
+    poga2.hidden=true;
+  }
+  function function3(){
+    var field = document.getElementById('third');
+    field.style="padding-left: 2%; visibility: visible;";
+    var poga3 = document.getElementById('poga3');
+    poga3.hidden=true;
+  }
+  function function4(){
+    var field = document.getElementById('fourth');
+    field.style="padding-left: 2%; visibility: visible;";
+    var poga4 = document.getElementById('poga4');
+    poga4.hidden=true;
+  }
+</script>

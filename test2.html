@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistiskie Testi</title>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            font-family: poppins; 
+        }
+        .menu {
+          font-family: poppins; 
+          font-size: 15px;  
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .menu1 {
+          float: left;
+        }
+        
+        .menu1 a, .dropbtn{
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 20px 20px;
+          text-decoration: none;
+        }
+        li.dropdown {
+        display: inline-block;
+        }
+        
+        .menu1 a:hover, .dropdown:hover {
+          background-color: rgb(133, 28, 28);
+        }
+        .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu1"><a class="active" href="index.html">Sākums</a></li>
+        <li class="dropdown menu1">
+            <a href="javascript:void(0)" class="dropbtn">Teorija</a>
+            <div class="dropdown-content">
+                <a href="ievads.html">Ievads</a>
+                <a href="test1.html">Chi-kvadrāta tests sadalījumiem</a>
+                <a href="test2.html">Chi-kvadrāta neatkarības tests</a>
+                <a href="test3.html">Hipotēžu tests vidējam aritmētiskajam</a>
+                <a href="test4.html">Hipotēžu tests diviem izlašu vidējiem aritmētiskajiem</a>
+            </div>
+          </li>
+        <li class="menu1"><a href="game1.html">Atmiņas spēle</a></li>
+        <li class="menu1"><a href="game2.html">Formulu spēle</a></li>
+        <li class="menu1"><a href="calculations.html">Uzdevumi</a></li>
+    </ul>
+    <center><h1>Chi - kvadrāta neatkarības tests</h1>
+        <p>Šajā gadījumā:<br>
+            H0: mainīgie x un y ir neatkarīgi raksturlielumi<br>
+            Ha: mainīgie x un y ir savstarpēji saistīti
+        </p></center>
+        <p>Izmantojamās formulas:</p>
+        <img src="img12.png" alt="There should be an image here">
+        <p>Fe -> sagaidāmā vērtība, Fk -> kopējais daudzums kolonnās, Fr -> kopējais daudzums rindās</p>
+        <img src="img13.png" alt="There should be an image here">
+        <p>r -> rindu skaits, k - kolonnu skaits</p>
+        <img src="img14.png" alt="There should be an image here">
+        <img src="img11.png" alt="There should be an image here">
+        <p>Ja aprēķinātā vērtība ietilpst noteiktajās robežās, tad H0 apstiprina, ja ne, tad noraida.</p>
+
+</body>
+</html>

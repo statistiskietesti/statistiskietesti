@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistiskie Testi</title>
+    <style>
+      a:link {
+       text-decoration: none;
+      } 
+        body {
+            background-image: url("background.jpg");
+            font-family: poppins; 
+        }
+        .menu {
+          font-family: poppins; 
+          font-size: 15px;  
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .menu1 {
+          float: left;
+        }
+        
+        .menu1 a, .dropbtn{
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 20px 20px;
+          text-decoration: none;
+        }
+        li.dropdown {
+        display: inline-block;
+        }
+        
+        .menu1 a:hover, .dropdown:hover {
+          background-color: rgb(133, 28, 28);
+        }
+        .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu1"><a class="active" href="index.html">Sākums</a></li>
+        <li class="dropdown menu1">
+            <a href="javascript:void(0)" class="dropbtn">Teorija</a>
+            <div class="dropdown-content">
+                <a href="ievads.html">Ievads</a>
+                <a href="test1.html">Chi-kvadrāta tests sadalījumiem</a>
+                <a href="test2.html">Chi-kvadrāta neatkarības tests</a>
+                <a href="test3.html">Hipotēžu tests vidējam aritmētiskajam</a>
+                <a href="test4.html">Hipotēžu tests diviem izlašu vidējiem aritmētiskajiem</a>
+            </div>
+          </li>
+        <li class="menu1"><a href="game1.html">Atmiņas spēle</a></li>
+        <li class="menu1"><a href="game2.html">Formulu spēle</a></li>
+        <li class="menu1"><a href="calculations.html">Uzdevumi</a></li>
+    </ul>
+    <center><h1>Ievads</h1></center>
+    <p style="padding-left: 10%;"><b>Šajā materiālā apskatīti šādi statistiskie testi: </b><br>
+    <a href="test1.html">1. Chi-kvadrāta tests sadalījumiem<br></a>
+    <a href="test2.html">2. Chi-kvadrāta neatkarības tests<br></a>
+    <a href="test3.html">3. Hipotēžu tests vidējam aritmētiskajam<br></a>
+    <a href="test4.html">4. Hipotēžu tests diviem izlašu vidējiem aritmētiskajiem</a></p>
+    <br>
+    <p style="padding-left: 10%; padding-right: 10%; ">
+        Katram testam ir jānosaka nulles hipotēze(H0), alternatīvā hipotēze(Ha), brīvības pakāpe (df), nozīmības līmenis(alfa), 
+        ticamības intervāls (nosaka no statistikas tabulām, ņem vērā brīvības pakāpi un nozīmības līmeni).
+    </p>
+    <p style="padding-left: 10%;"><b>Ieteicamā uzdevumu pildīšanas secība:</b><br>
+    1. Izlasīt uzdevumu<br>
+    2. Noteikt testu<br>
+    3. Noteikt izmantojamās formulas<br>
+    4. Noteikt H0 un Ha<br>
+    5. Aprēķināt brīvības pakāpi<br>
+    6. Atrast kritisko vērtību <br>
+    7. Aprēķināt testa vērtību<br>
+    8. Salīdzināt kritiskās vērtības<br>
+    9. Izdarīt secinājumus</p>
+</body>
+</html>
